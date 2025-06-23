@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { Star, ShoppingCart, Heart, Truck, Shield, RotateCcw, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 
 // Sample product data
 const products = [
@@ -116,8 +117,9 @@ const relatedProducts = [
   }
 ];
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
-  const product = products.find(p => p.id === parseInt(params.id)) || products[0];
+export default function ProductDetailPage() {
+  const params = useParams();
+  const product = products.find(p => p.id === parseInt(params.id as string)) || products[0];
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectedVariants, setSelectedVariants] = useState<{ [key: string]: string }>({});
   const [quantity, setQuantity] = useState(1);
