@@ -21,7 +21,7 @@ const products = [
     image: stairImages[0],
     rating: 4.8,
     reviews: 124,
-    category: 'Nội thất văn phòng',
+    category: 'Cơ khí cầu thang',
     brand: 'Sakura',
     onSale: true
   },
@@ -33,7 +33,7 @@ const products = [
     image: stairImages[1],
     rating: 4.6,
     reviews: 89,
-    category: 'Nội thất văn phòng',
+    category: 'Cơ khí cầu thang',
     brand: 'Sakura',
     onSale: true
   },
@@ -45,7 +45,7 @@ const products = [
     image: stairImages[2],
     rating: 4.9,
     reviews: 156,
-    category: 'Đèn chiếu sáng',
+    category: 'Cơ khí cầu thang',
     brand: 'Sakura',
     onSale: true
   },
@@ -57,7 +57,7 @@ const products = [
     image: stairImages[3],
     rating: 4.7,
     reviews: 203,
-    category: 'Nội thất phòng khách',
+    category: 'Cơ khí cầu thang',
     brand: 'Sakura',
     onSale: true
   },
@@ -69,7 +69,7 @@ const products = [
     image: stairImages[4],
     rating: 4.5,
     reviews: 67,
-    category: 'Nội thất đa năng',
+    category: 'Cơ khí cầu thang',
     brand: 'Sakura',
     onSale: true
   },
@@ -81,7 +81,7 @@ const products = [
     image: stairImages[0],
     rating: 4.4,
     reviews: 92,
-    category: 'Đồ trang trí',
+    category: 'Cơ khí cầu thang',
     brand: 'Sakura',
     onSale: true
   },
@@ -93,7 +93,7 @@ const products = [
     image: stairImages[1],
     rating: 4.6,
     reviews: 78,
-    category: 'Đồ trang trí',
+    category: 'Cơ khí cầu thang',
     brand: 'Sakura',
     onSale: true
   },
@@ -105,7 +105,7 @@ const products = [
     image: stairImages[2],
     rating: 4.8,
     reviews: 134,
-    category: 'Đồ trang trí',
+    category: 'Cơ khí cầu thang',
     brand: 'Sakura',
     onSale: true
   },
@@ -117,7 +117,7 @@ const products = [
     image: stairImages[3],
     rating: 4.9,
     reviews: 189,
-    category: 'Nội thất phòng khách',
+    category: 'Cơ khí cầu thang',
     brand: 'Sakura',
     onSale: true
   },
@@ -129,7 +129,7 @@ const products = [
     image: stairImages[4],
     rating: 4.3,
     reviews: 56,
-    category: 'Đồ dùng học tập',
+    category: 'Cơ khí cầu thang',
     brand: 'Sakura',
     onSale: true
   },
@@ -141,7 +141,7 @@ const products = [
     image: stairImages[0],
     rating: 4.7,
     reviews: 98,
-    category: 'Đồ trang trí',
+    category: 'Cơ khí cầu thang',
     brand: 'Sakura',
     onSale: true
   },
@@ -153,7 +153,7 @@ const products = [
     image: stairImages[1],
     rating: 4.8,
     reviews: 145,
-    category: 'Đồ trang trí',
+    category: 'Cơ khí cầu thang',
     brand: 'Sakura',
     onSale: true
   }

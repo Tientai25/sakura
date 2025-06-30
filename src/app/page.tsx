@@ -16,46 +16,46 @@ const stairImages = [
 const featuredProducts = [
   {
     id: 1,
-    name: 'Ghế văn phòng hiện đại',
+    name: 'Cầu thang cao cấp',
     price: 2500000,
     originalPrice: 3000000,
     image: stairImages[0],
     rating: 4.8,
     reviews: 124,
-    category: 'Nội thất văn phòng',
+    category: 'Cơ khí cầu thang',
     onSale: true
   },
   {
     id: 2,
-    name: 'Bàn làm việc sang trọng',
+    name: 'Cầu thang cao cấp',
     price: 1800000,
     originalPrice: 2200000,
     image: stairImages[1],
     rating: 4.6,
     reviews: 89,
-    category: 'Nội thất văn phòng',
+    category: 'Cơ khí cầu thang',
     onSale: true
   },
   {
     id: 3,
-    name: 'Đèn bàn thiết kế độc đáo',
+    name: 'Cầu thang cao cấp',
     price: 850000,
     originalPrice: 1200000,
     image: stairImages[2],
     rating: 4.9,
     reviews: 156,
-    category: 'Đèn chiếu sáng',
+    category: 'Cơ khí cầu thang',
     onSale: true
   },
   {
     id: 4,
-    name: 'Ghế sofa sàn hiện đại',
+    name: 'Cầu thang cao cấp',
     price: 3200000,
     originalPrice: 3800000,
     image: stairImages[3],
     rating: 4.7,
     reviews: 203,
-    category: 'Nội thất phòng khách',
+    category: 'Cơ khí cầu thang',
     onSale: true
   }
 ];
@@ -63,46 +63,46 @@ const featuredProducts = [
 const newArrivals = [
   {
     id: 5,
-    name: 'Bàn sàn đa năng',
+    name: 'Cầu thang cao cấp',
     price: 1500000,
     originalPrice: 1800000,
     image: stairImages[4],
     rating: 4.5,
     reviews: 67,
-    category: 'Nội thất đa năng',
+    category: 'Cơ khí cầu thang',
     onSale: true
   },
   {
     id: 6,
-    name: 'Đồng hồ treo tường hiện đại',
+    name: 'Cầu thang cao cấp',
     price: 650000,
     originalPrice: 850000,
     image: stairImages[0],
     rating: 4.4,
     reviews: 92,
-    category: 'Đồ trang trí',
+    category: 'Cơ khí cầu thang',
     onSale: true
   },
   {
     id: 7,
-    name: 'Lọ hoa đen sang trọng',
+    name: 'Cầu thang cao cấp',
     price: 450000,
     originalPrice: 600000,
     image: stairImages[1],
     rating: 4.6,
     reviews: 78,
-    category: 'Đồ trang trí',
+    category: 'Cơ khí cầu thang',
     onSale: true
   },
   {
     id: 8,
-    name: 'Tranh treo tường nghệ thuật',
+    name: 'Cầu thang cao cấp',
     price: 1200000,
     originalPrice: 1500000,
     image: stairImages[2],
     rating: 4.8,
     reviews: 134,
-    category: 'Đồ trang trí',
+    category: 'Cơ khí cầu thang',
     onSale: true
   }
 ];
@@ -114,7 +114,7 @@ const testimonials = [
     role: 'Chủ doanh nghiệp',
     content: 'Sản phẩm của Sakura JSC thực sự chất lượng cao. Tôi rất hài lòng với dịch vụ và sản phẩm.',
     rating: 5,
-    avatar: '/assets/testimonial-1.jpg'
+    avatar: '/assets/testimonial.jpg'
   },
   {
     id: 2,
@@ -122,7 +122,7 @@ const testimonials = [
     role: 'Kiến trúc sư',
     content: 'Thiết kế hiện đại và chất lượng tuyệt vời. Khách hàng của tôi rất thích các sản phẩm từ Sakura JSC.',
     rating: 5,
-    avatar: '/assets/testimonial-2.jpg'
+    avatar: '/assets/testimonial.jpg'
   },
   {
     id: 3,
@@ -130,7 +130,7 @@ const testimonials = [
     role: 'Nhà thiết kế nội thất',
     content: 'Sakura JSC cung cấp những sản phẩm đẹp và bền. Tôi thường xuyên giới thiệu cho khách hàng.',
     rating: 5,
-    avatar: '/assets/testimonial-3.jpg'
+    avatar: '/assets/testimonial.jpg'
   }
 ];
 
