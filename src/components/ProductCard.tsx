@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Star, ShoppingCart, Heart } from 'lucide-react';
+import { Star, Phone, Heart } from 'lucide-react';
 
 interface Product {
   id: number;
@@ -24,20 +24,12 @@ interface ProductCardProps {
 const ProductCard = ({ product }: ProductCardProps) => {
   const [isWishlisted, setIsWishlisted] = useState(false);
 
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('vi-VN', {
-      style: 'currency',
-      currency: 'VND',
-      minimumFractionDigits: 0,
-    }).format(price);
-  };
-
   const discountPercentage = product.originalPrice 
     ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
     : 0;
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 group border border-gray-200">
       {/* Product Image */}
       <div className="relative aspect-square overflow-hidden">
         <Link href={`/product/${product.id}`}>
@@ -51,7 +43,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         
         {/* Sale Badge */}
         {product.onSale && product.originalPrice && (
-          <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+          <div className="absolute top-2 left-2 bg-yellow-600 text-white text-xs font-bold px-2 py-1 rounded">
             -{discountPercentage}%
           </div>
         )}
@@ -74,13 +66,13 @@ const ProductCard = ({ product }: ProductCardProps) => {
         
         {/* Product Name */}
         <Link href={`/product/${product.id}`}>
-          <h3 className="font-semibold text-gray-900 mb-2 hover:text-blue-600 transition-colors line-clamp-2">
+          <h3 className="font-semibold text-gray-900 mb-2 hover:text-yellow-600 transition-colors line-clamp-2">
             {product.name}
           </h3>
         </Link>
         
         {/* Rating */}
-        <div className="flex items-center mb-2">
+        <div className="flex items-center mb-3">
           <div className="flex items-center">
             {[...Array(5)].map((_, i) => (
               <Star
@@ -98,25 +90,27 @@ const ProductCard = ({ product }: ProductCardProps) => {
           </span>
         </div>
         
-        {/* Price */}
-        <div className="flex items-center justify-between mb-3">
-          <div className="flex items-center space-x-2">
-            <span className="font-bold text-lg text-gray-900">
-              {formatPrice(product.price)}
-            </span>
-            {product.originalPrice && (
-              <span className="text-sm text-gray-500 line-through">
-                {formatPrice(product.originalPrice)}
-              </span>
-            )}
+        {/* Contact Info */}
+        <div className="mb-3">
+          <div className="bg-gray-50 rounded-lg p-3 border border-gray-200">
+            <div className="flex items-center justify-center space-x-2">
+              <Phone className="h-4 w-4 text-yellow-600" />
+              <span className="text-sm font-medium text-gray-900">Liên hệ hotline</span>
+            </div>
+            <div className="text-center mt-1">
+              <span className="text-lg font-bold text-yellow-600">0915221639</span>
+            </div>
           </div>
         </div>
         
-        {/* Add to Cart Button */}
-        <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2">
-          <ShoppingCart className="h-4 w-4" />
-          <span>Thêm vào giỏ</span>
-        </button>
+        {/* Contact Button */}
+        <a 
+          href="tel:0915221639"
+          className="w-full bg-gradient-to-r from-gray-800 to-gray-900 text-white py-2 px-4 rounded-lg hover:from-gray-700 hover:to-gray-800 transition-all flex items-center justify-center space-x-2"
+        >
+          <Phone className="h-4 w-4" />
+          <span>Liên hệ ngay</span>
+        </a>
       </div>
     </div>
   );

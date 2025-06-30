@@ -73,12 +73,12 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+      <section className="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Liên hệ chúng tôi</h1>
           <p className="text-xl max-w-3xl mx-auto">
             Chúng tôi luôn sẵn sàng hỗ trợ và giải đáp mọi thắc mắc của bạn. 
-            Hãy liên hệ với Sakura Home để được tư vấn tốt nhất.
+            Hãy liên hệ với SAKURA JSC để được tư vấn tốt nhất.
           </p>
         </div>
       </section>
@@ -98,7 +98,7 @@ export default function ContactPage() {
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
-                  className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                  className="bg-yellow-600 text-white px-6 py-2 rounded-lg hover:bg-yellow-700 transition-colors"
                 >
                   Gửi tin nhắn khác
                 </button>
@@ -190,7 +190,7 @@ export default function ContactPage() {
                 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2"
+                  className="w-full bg-gradient-to-r from-gray-800 to-gray-900 text-white py-3 px-6 rounded-lg font-semibold hover:from-gray-700 hover:to-gray-800 transition-colors flex items-center justify-center space-x-2"
                 >
                   <Send className="h-5 w-5" />
                   <span>Gửi tin nhắn</span>
@@ -207,7 +207,7 @@ export default function ContactPage() {
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="text-blue-600 flex-shrink-0">
+                    <div className="text-yellow-600 flex-shrink-0">
                       {info.icon}
                     </div>
                     <div>
@@ -249,7 +249,7 @@ export default function ContactPage() {
         {/* Additional Contact Options */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="text-blue-600 mb-4 flex justify-center">
+            <div className="text-yellow-600 mb-4 flex justify-center">
               <Phone className="h-8 w-8" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Gọi điện thoại</h3>
@@ -257,15 +257,15 @@ export default function ContactPage() {
               Liên hệ trực tiếp với chúng tôi qua điện thoại để được hỗ trợ nhanh chóng
             </p>
             <a
-              href="tel:+84123456789"
-              className="text-blue-600 font-semibold hover:text-blue-700"
+              href="tel:0915221639"
+              className="text-yellow-600 font-semibold hover:text-yellow-700"
             >
-              +84 123 456 789
+              0915221639
             </a>
           </div>
 
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="text-blue-600 mb-4 flex justify-center">
+            <div className="text-yellow-600 mb-4 flex justify-center">
               <Mail className="h-8 w-8" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Gửi email</h3>
@@ -273,22 +273,22 @@ export default function ContactPage() {
               Gửi email cho chúng tôi để được tư vấn chi tiết và chuyên nghiệp
             </p>
             <a
-              href="mailto:info@sakurahome.vn"
-              className="text-blue-600 font-semibold hover:text-blue-700"
+              href="mailto:info@sakurajsc.vn"
+              className="text-yellow-600 font-semibold hover:text-yellow-700"
             >
-              info@sakurahome.vn
+              info@sakurajsc.vn
             </a>
           </div>
 
           <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="text-blue-600 mb-4 flex justify-center">
+            <div className="text-yellow-600 mb-4 flex justify-center">
               <Clock className="h-8 w-8" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Giờ làm việc</h3>
             <p className="text-gray-600 mb-4">
               Chúng tôi sẵn sàng phục vụ bạn trong giờ làm việc
             </p>
-            <p className="text-blue-600 font-semibold">
+            <p className="text-yellow-600 font-semibold">
               Thứ 2 - Thứ 7: 8:00 - 18:00
             </p>
           </div>

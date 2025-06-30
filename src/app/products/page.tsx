@@ -5,13 +5,20 @@ import { Search, Filter, ChevronDown, ChevronUp, Star } from 'lucide-react';
 import ProductCard from '@/components/ProductCard';
 
 // Sample products data
+const stairImages = [
+  '/assets/stair-1.jpg',
+  '/assets/stair-2.jpg',
+  '/assets/stair-3.jpg',
+  '/assets/stair-4.jpg',
+  '/assets/stair-5.jpg',
+];
 const products = [
   {
     id: 1,
-    name: 'Ghế văn phòng hiện đại',
+    name: 'Cầu thang gỗ tay vịn sắt hiện đại',
     price: 2500000,
     originalPrice: 3000000,
-    image: '/assets/office-chair.jpg',
+    image: stairImages[0],
     rating: 4.8,
     reviews: 124,
     category: 'Nội thất văn phòng',
@@ -20,10 +27,10 @@ const products = [
   },
   {
     id: 2,
-    name: 'Bàn làm việc sang trọng',
+    name: 'Cầu thang gỗ tay vịn uốn cong',
     price: 1800000,
     originalPrice: 2200000,
-    image: '/assets/stylish-table.jpg',
+    image: stairImages[1],
     rating: 4.6,
     reviews: 89,
     category: 'Nội thất văn phòng',
@@ -32,10 +39,10 @@ const products = [
   },
   {
     id: 3,
-    name: 'Đèn bàn thiết kế độc đáo',
+    name: 'Cầu thang sắt nghệ thuật cổ điển',
     price: 850000,
     originalPrice: 1200000,
-    image: '/assets/table-lamp.jpg',
+    image: stairImages[2],
     rating: 4.9,
     reviews: 156,
     category: 'Đèn chiếu sáng',
@@ -44,10 +51,10 @@ const products = [
   },
   {
     id: 4,
-    name: 'Ghế sofa sàn hiện đại',
+    name: 'Cầu thang sắt mạ vàng sang trọng',
     price: 3200000,
     originalPrice: 3800000,
-    image: '/assets/floor-sofa.jpg',
+    image: stairImages[3],
     rating: 4.7,
     reviews: 203,
     category: 'Nội thất phòng khách',
@@ -56,10 +63,10 @@ const products = [
   },
   {
     id: 5,
-    name: 'Bàn sàn đa năng',
+    name: 'Cầu thang inox tay vịn gỗ cao cấp',
     price: 1500000,
     originalPrice: 1800000,
-    image: '/assets/floor-table.jpg',
+    image: stairImages[4],
     rating: 4.5,
     reviews: 67,
     category: 'Nội thất đa năng',
@@ -68,10 +75,10 @@ const products = [
   },
   {
     id: 6,
-    name: 'Đồng hồ treo tường hiện đại',
+    name: 'Cầu thang gỗ phối sắt đơn giản',
     price: 650000,
     originalPrice: 850000,
-    image: '/assets/modern-clock.jpg',
+    image: stairImages[0],
     rating: 4.4,
     reviews: 92,
     category: 'Đồ trang trí',
@@ -80,10 +87,10 @@ const products = [
   },
   {
     id: 7,
-    name: 'Lọ hoa đen sang trọng',
+    name: 'Cầu thang sắt trụ tròn mạ vàng',
     price: 450000,
     originalPrice: 600000,
-    image: '/assets/vase-black.jpg',
+    image: stairImages[1],
     rating: 4.6,
     reviews: 78,
     category: 'Đồ trang trí',
@@ -92,10 +99,10 @@ const products = [
   },
   {
     id: 8,
-    name: 'Tranh treo tường nghệ thuật',
+    name: 'Cầu thang sắt hoa văn nghệ thuật',
     price: 1200000,
     originalPrice: 1500000,
-    image: '/assets/wall-art.jpg',
+    image: stairImages[2],
     rating: 4.8,
     reviews: 134,
     category: 'Đồ trang trí',
@@ -104,10 +111,10 @@ const products = [
   },
   {
     id: 9,
-    name: 'Ghế sang trọng cao cấp',
+    name: 'Cầu thang đá tay vịn sắt đen',
     price: 2800000,
     originalPrice: 3500000,
-    image: '/assets/luxury-seat.jpg',
+    image: stairImages[3],
     rating: 4.9,
     reviews: 189,
     category: 'Nội thất phòng khách',
@@ -116,10 +123,10 @@ const products = [
   },
   {
     id: 10,
-    name: 'Bảng vẽ tại nhà',
+    name: 'Cầu thang inox phối đồng cao cấp',
     price: 750000,
     originalPrice: 950000,
-    image: '/assets/drawing-board.jpg',
+    image: stairImages[4],
     rating: 4.3,
     reviews: 56,
     category: 'Đồ dùng học tập',
@@ -128,10 +135,10 @@ const products = [
   },
   {
     id: 11,
-    name: 'Lọ hoa trắng cao cấp',
+    name: 'Cầu thang gỗ tự nhiên sang trọng',
     price: 550000,
     originalPrice: 750000,
-    image: '/assets/vase-white.jpg',
+    image: stairImages[0],
     rating: 4.7,
     reviews: 98,
     category: 'Đồ trang trí',
@@ -140,17 +147,20 @@ const products = [
   },
   {
     id: 12,
-    name: 'Lọ hoa đặc biệt',
+    name: 'Cầu thang sắt mỹ thuật cao cấp',
     price: 950000,
     originalPrice: 1200000,
-    image: '/assets/special-vase.jpg',
+    image: stairImages[1],
     rating: 4.8,
     reviews: 145,
     category: 'Đồ trang trí',
     brand: 'Sakura',
     onSale: true
   }
-];
+].map((product, idx) => ({
+  ...product,
+  image: stairImages[idx % stairImages.length],
+}));
 
 const categories = ['Tất cả', 'Nội thất văn phòng', 'Nội thất phòng khách', 'Đèn chiếu sáng', 'Đồ trang trí', 'Nội thất đa năng', 'Đồ dùng học tập'];
 const brands = ['Tất cả', 'Sakura', 'Premium', 'Modern', 'Classic'];
@@ -166,7 +176,6 @@ export default function ProductsPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Tất cả');
   const [selectedBrand, setSelectedBrand] = useState('Tất cả');
-  const [priceRange, setPriceRange] = useState([0, 5000000]);
   const [sortBy, setSortBy] = useState('newest');
   const [currentPage, setCurrentPage] = useState(1);
   const [showFilters, setShowFilters] = useState(false);
@@ -178,9 +187,8 @@ export default function ProductsPage() {
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === 'Tất cả' || product.category === selectedCategory;
     const matchesBrand = selectedBrand === 'Tất cả' || product.brand === selectedBrand;
-    const matchesPrice = product.price >= priceRange[0] && product.price <= priceRange[1];
     
-    return matchesSearch && matchesCategory && matchesBrand && matchesPrice;
+    return matchesSearch && matchesCategory && matchesBrand;
   });
 
   // Sort products
@@ -235,7 +243,7 @@ export default function ProductsPage() {
                   placeholder="Tìm kiếm sản phẩm..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                 />
               </div>
             </div>
@@ -245,7 +253,7 @@ export default function ProductsPage() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
               >
                 {sortOptions.map(option => (
                   <option key={option.value} value={option.value}>
@@ -275,7 +283,7 @@ export default function ProductsPage() {
                   <select
                     value={selectedCategory}
                     onChange={(e) => setSelectedCategory(e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                   >
                     {categories.map(category => (
                       <option key={category} value={category}>{category}</option>
@@ -287,7 +295,7 @@ export default function ProductsPage() {
                   <select
                     value={selectedBrand}
                     onChange={(e) => setSelectedBrand(e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                   >
                     {brands.map(brand => (
                       <option key={brand} value={brand}>{brand}</option>
@@ -311,7 +319,7 @@ export default function ProductsPage() {
                 <select
                   value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                 >
                   {categories.map(category => (
                     <option key={category} value={category}>{category}</option>
@@ -325,7 +333,7 @@ export default function ProductsPage() {
                 <select
                   value={selectedBrand}
                   onChange={(e) => setSelectedBrand(e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
                 >
                   {brands.map(brand => (
                     <option key={brand} value={brand}>{brand}</option>
@@ -333,35 +341,14 @@ export default function ProductsPage() {
                 </select>
               </div>
 
-              {/* Price Range */}
-              <div className="mb-6">
-                <h4 className="font-medium text-gray-900 mb-3">Khoảng giá</h4>
-                <div className="space-y-2">
-                  <div className="flex justify-between text-sm text-gray-600">
-                    <span>{formatPrice(priceRange[0])}</span>
-                    <span>{formatPrice(priceRange[1])}</span>
-                  </div>
-                  <input
-                    type="range"
-                    min="0"
-                    max="5000000"
-                    step="100000"
-                    value={priceRange[1]}
-                    onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
-                    className="w-full"
-                  />
-                </div>
-              </div>
-
               {/* Clear Filters */}
               <button
                 onClick={() => {
                   setSelectedCategory('Tất cả');
                   setSelectedBrand('Tất cả');
-                  setPriceRange([0, 5000000]);
                   setSearchTerm('');
                 }}
-                className="w-full px-4 py-2 text-sm text-blue-600 hover:text-blue-700 font-medium"
+                className="w-full px-4 py-2 text-sm text-yellow-600 hover:text-yellow-700 font-medium"
               >
                 Xóa bộ lọc
               </button>
@@ -412,7 +399,7 @@ export default function ProductsPage() {
                         onClick={() => setCurrentPage(page)}
                         className={`px-3 py-2 text-sm font-medium rounded-md ${
                           isCurrentPage
-                            ? 'bg-blue-600 text-white'
+                            ? 'bg-yellow-600 text-white'
                             : 'text-gray-500 bg-white border border-gray-300 hover:bg-gray-50'
                         }`}
                       >

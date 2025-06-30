@@ -6,116 +6,55 @@ import { Star, ShoppingCart, Heart, Truck, Shield, RotateCcw, ChevronLeft, Chevr
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
-// Sample product data
-const products = [
-  {
-    id: 1,
-    name: 'Ghế văn phòng hiện đại',
-    price: 2500000,
-    originalPrice: 3000000,
-    description: 'Ghế văn phòng hiện đại với thiết kế ergonomic, hỗ trợ tốt cho cột sống và giảm mệt mỏi khi ngồi làm việc lâu. Chất liệu cao cấp, bền bỉ và dễ dàng vệ sinh.',
-    images: [
-      '/assets/office-chair.jpg',
-      '/assets/office-chair.jpg',
-      '/assets/office-chair.jpg',
-      '/assets/office-chair.jpg'
-    ],
-    rating: 4.8,
-    reviews: 124,
-    category: 'Nội thất văn phòng',
-    brand: 'Sakura',
-    onSale: true,
-    inStock: true,
-    variants: [
-      { name: 'Màu sắc', options: ['Đen', 'Trắng', 'Xám'] },
-      { name: 'Kích thước', options: ['Nhỏ', 'Vừa', 'Lớn'] }
-    ],
-    specifications: {
-      'Chất liệu': 'Vải cao cấp + Khung thép',
-      'Kích thước': '60 x 60 x 120 cm',
-      'Trọng lượng': '15 kg',
-      'Màu sắc': 'Đen, Trắng, Xám',
-      'Bảo hành': '2 năm'
-    }
-  },
-  {
-    id: 2,
-    name: 'Bàn làm việc sang trọng',
-    price: 1800000,
-    originalPrice: 2200000,
-    description: 'Bàn làm việc sang trọng với thiết kế hiện đại, phù hợp cho văn phòng và không gian làm việc tại nhà. Bề mặt rộng rãi, nhiều ngăn kéo tiện lợi.',
-    images: [
-      '/assets/stylish-table.jpg',
-      '/assets/stylish-table.jpg',
-      '/assets/stylish-table.jpg',
-      '/assets/stylish-table.jpg'
-    ],
-    rating: 4.6,
-    reviews: 89,
-    category: 'Nội thất văn phòng',
-    brand: 'Sakura',
-    onSale: true,
-    inStock: true,
-    variants: [
-      { name: 'Màu sắc', options: ['Nâu', 'Trắng', 'Đen'] },
-      { name: 'Kích thước', options: ['120cm', '140cm', '160cm'] }
-    ],
-    specifications: {
-      'Chất liệu': 'Gỗ công nghiệp cao cấp',
-      'Kích thước': '140 x 70 x 75 cm',
-      'Trọng lượng': '25 kg',
-      'Màu sắc': 'Nâu, Trắng, Đen',
-      'Bảo hành': '3 năm'
-    }
-  }
+const stairImages = [
+  '/assets/stair-1.jpg',
+  '/assets/stair-2.jpg',
+  '/assets/stair-3.jpg',
+  '/assets/stair-4.jpg',
+  '/assets/stair-5.jpg',
 ];
-
-const relatedProducts = [
-  {
-    id: 3,
-    name: 'Đèn bàn thiết kế độc đáo',
-    price: 850000,
-    originalPrice: 1200000,
-    image: '/assets/table-lamp.jpg',
-    rating: 4.9,
-    reviews: 156,
-    category: 'Đèn chiếu sáng',
-    onSale: true
-  },
-  {
-    id: 4,
-    name: 'Ghế sofa sàn hiện đại',
-    price: 3200000,
-    originalPrice: 3800000,
-    image: '/assets/floor-sofa.jpg',
-    rating: 4.7,
-    reviews: 203,
-    category: 'Nội thất phòng khách',
-    onSale: true
-  },
-  {
-    id: 5,
-    name: 'Bàn sàn đa năng',
-    price: 1500000,
-    originalPrice: 1800000,
-    image: '/assets/floor-table.jpg',
-    rating: 4.5,
-    reviews: 67,
-    category: 'Nội thất đa năng',
-    onSale: true
-  },
-  {
-    id: 6,
-    name: 'Đồng hồ treo tường hiện đại',
-    price: 650000,
-    originalPrice: 850000,
-    image: '/assets/modern-clock.jpg',
-    rating: 4.4,
-    reviews: 92,
-    category: 'Đồ trang trí',
-    onSale: true
-  }
+const stairNames = [
+  'Cầu thang gỗ tay vịn sắt hiện đại',
+  'Cầu thang gỗ tay vịn uốn cong',
+  'Cầu thang sắt nghệ thuật cổ điển',
+  'Cầu thang sắt mạ vàng sang trọng',
+  'Cầu thang inox tay vịn gỗ cao cấp',
+  'Cầu thang gỗ phối sắt đơn giản',
+  'Cầu thang sắt trụ tròn mạ vàng',
+  'Cầu thang sắt hoa văn nghệ thuật',
+  'Cầu thang đá tay vịn sắt đen',
+  'Cầu thang inox phối đồng cao cấp',
+  'Cầu thang gỗ tự nhiên sang trọng',
+  'Cầu thang sắt mỹ thuật cao cấp',
 ];
+const products = stairNames.map((name, idx) => ({
+  id: idx + 1,
+  name,
+  price: 0,
+  originalPrice: 0,
+  description: 'Sản phẩm cầu thang cao cấp, thiết kế hiện đại, chất liệu bền bỉ, phù hợp với nhiều không gian nội thất.',
+  images: Array(4).fill(stairImages[idx % stairImages.length]),
+  rating: 4.5 + (idx % 5) * 0.1,
+  reviews: 50 + idx * 10,
+  category: 'Cầu thang',
+  brand: 'SAKURA JSC',
+  onSale: true,
+  inStock: true,
+  variants: [
+    { name: 'Chất liệu', options: ['Gỗ', 'Sắt', 'Inox'] },
+    { name: 'Màu sắc', options: ['Nâu', 'Đen', 'Vàng'] }
+  ],
+  specifications: {
+    'Chất liệu': 'Gỗ, Sắt, Inox',
+    'Kích thước': 'Theo yêu cầu',
+    'Bảo hành': '2 năm',
+    'Thương hiệu': 'SAKURA JSC'
+  }
+}));
+const relatedProducts = products.slice(0, 4).map((product, idx) => ({
+  ...product,
+  image: stairImages[(idx + 1) % stairImages.length],
+}));
 
 export default function ProductDetailPage() {
   const params = useParams();

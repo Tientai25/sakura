@@ -8,19 +8,19 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Sakura Home</h3>
+            <h3 className="text-2xl font-bold mb-4">Sakura JSC</h3>
             <p className="text-gray-300 mb-4">
               Chúng tôi cung cấp các sản phẩm chất lượng cao với thiết kế hiện đại và giá cả hợp lý. 
               Mục tiêu của chúng tôi là mang đến cho bạn không gian sống đẹp và thoải mái.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
                 <Twitter className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
                 <Instagram className="h-6 w-6" />
               </a>
             </div>
@@ -31,22 +31,22 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Liên kết nhanh</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/" className="text-gray-300 hover:text-yellow-400 transition-colors">
                   Trang chủ
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/products" className="text-gray-300 hover:text-yellow-400 transition-colors">
                   Sản phẩm
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/about" className="text-gray-300 hover:text-yellow-400 transition-colors">
                   Về chúng tôi
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/contact" className="text-gray-300 hover:text-yellow-400 transition-colors">
                   Liên hệ
                 </Link>
               </li>
@@ -58,16 +58,16 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Thông tin liên hệ</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
-                <MapPin className="h-5 w-5 text-gray-400" />
-                <span className="text-gray-300">123 Đường ABC, Quận 1, TP.HCM</span>
+                <MapPin className="h-5 w-5 text-yellow-400" />
+                <span className="text-gray-300">Cụm công nghiệp Thanh Oai, Xã Bích Hoà, Huyện Thanh Oai, Thành phố Hà Nội, Việt Nam</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Phone className="h-5 w-5 text-gray-400" />
-                <span className="text-gray-300">+84 123 456 789</span>
+                <Phone className="h-5 w-5 text-yellow-400" />
+                <span className="text-gray-300">0915221639</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail className="h-5 w-5 text-gray-400" />
-                <span className="text-gray-300">info@sakurahome.vn</span>
+                <Mail className="h-5 w-5 text-yellow-400" />
+                <span className="text-gray-300">info@sakurajsc.vn</span>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2024 Sakura Home. Tất cả quyền được bảo lưu.
+            © 2024 Sakura JSC. Tất cả quyền được bảo lưu.
           </p>
         </div>
       </div>

@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Sakura Home - Sản phẩm chất lượng cao",
+  title: "Sakura JSC - Sản phẩm chất lượng cao",
   description: "Khám phá các sản phẩm chất lượng cao với nhiều tính năng tuyệt vời để làm cho bạn trông tươi mới. Mua sắm bộ sưu tập đồ trang trí nhà, nội thất và sản phẩm lối sống của chúng tôi.",
 };
 
