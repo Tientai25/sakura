@@ -23,7 +23,7 @@ const stairNames = [
   'Cầu thang sắt trụ tròn mạ vàng',
   'Cầu thang sắt hoa văn nghệ thuật',
   'Cầu thang đá tay vịn sắt đen',
-  'Cầu thang inox phối đồng cao cấp hiện đại',
+  'Cầu thang inox phối đồng cao cấp',
   'Cầu thang gỗ tự nhiên sang trọng',
   'Cầu thang sắt mỹ thuật cao cấp',
 ];
