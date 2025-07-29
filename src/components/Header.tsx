@@ -22,7 +22,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-bold text-gray-900">
-              Sakura JSC
+              Sakura 
             </Link>
           </div>
 
@@ -35,6 +35,9 @@ const Header = () => {
                 className="text-gray-700 hover:text-yellow-600 px-3 py-2 text-sm font-medium transition-colors"
               >
                 {item.name}
+                {item.name === 'Liên hệ' && (
+                  <span className="ml-2 text-yellow-600 font-semibold">0915221639</span>
+                )}
               </Link>
             ))}
           </nav>
@@ -85,6 +88,9 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
+                  {item.name === 'Liên hệ' && (
+                    <span className="ml-2 text-yellow-600 font-semibold">0915221639</span>
+                  )}
                 </Link>
               ))}
               {/* <div className="px-3 py-2">

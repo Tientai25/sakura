@@ -92,10 +92,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
         
         {/* Contact Info */}
         <div className="mb-3">
-          <div className="bg-gray-50 rounded-lg p-3 border border-gray-200">
+          <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-lg p-3 border border-gray-200">
             <div className="flex items-center justify-center space-x-2">
               <Phone className="h-4 w-4 text-yellow-600" />
-              <span className="text-sm font-medium text-gray-900">Liên hệ hotline</span>
+              <span className="text-sm font-medium text-white">Liên hệ hotline</span>
             </div>
             <div className="text-center mt-1">
               <span className="text-lg font-bold text-yellow-600">0915221639</span>
@@ -104,13 +104,13 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </div>
         
         {/* Contact Button */}
-        <a 
+        {/* <a 
           href="tel:0915221639"
           className="w-full bg-gradient-to-r from-gray-800 to-gray-900 text-white py-2 px-4 rounded-lg hover:from-gray-700 hover:to-gray-800 transition-all flex items-center justify-center space-x-2"
         >
           <Phone className="h-4 w-4" />
           <span>Liên hệ ngay</span>
-        </a>
+        </a> */}
       </div>
     </div>
   );

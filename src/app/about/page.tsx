@@ -6,7 +6,7 @@ export default function AboutPage() {
       name: 'Ông Nguyễn Viết Ngọc',
       role: 'Giám đốc',
       image: '/assets/team-1.jpg',
-      bio: 'Lãnh đạo công ty với tầm nhìn chiến lược, dẫn dắt SAKURA JSC trở thành thương hiệu hàng đầu trong lĩnh vực sản xuất cơ khí inox cao cấp.'
+      bio: 'Lãnh đạo công ty với tầm nhìn chiến lược, dẫn dắt SAKURA  trở thành thương hiệu hàng đầu trong lĩnh vực sản xuất cơ khí inox cao cấp.'
     },
     {
       name: 'Phòng Kế toán',
@@ -68,19 +68,19 @@ export default function AboutPage() {
     {
       name: 'Phạm Thị Dung',
       role: 'Chủ doanh nghiệp',
-      content: 'SAKURA JSC đã giúp tôi tạo nên không gian nội thất chuyên nghiệp với các sản phẩm cơ khí inox cao cấp. Chất lượng và dịch vụ tuyệt vời!',
+      content: 'SAKURA  đã giúp tôi tạo nên không gian nội thất chuyên nghiệp với các sản phẩm cơ khí inox cao cấp. Chất lượng và dịch vụ tuyệt vời!',
       rating: 5
     },
     {
       name: 'Hoàng Văn Em',
       role: 'Kiến trúc sư',
-      content: 'Là đối tác lâu năm của SAKURA JSC, tôi luôn tin tưởng vào chất lượng sản phẩm cơ khí và dịch vụ thiết kế của họ.',
+      content: 'Là đối tác lâu năm của SAKURA , tôi luôn tin tưởng vào chất lượng sản phẩm cơ khí và dịch vụ thiết kế của họ.',
       rating: 5
     },
     {
       name: 'Vũ Thị Phương',
       role: 'Nhà thiết kế nội thất',
-      content: 'SAKURA JSC cung cấp những sản phẩm cơ khí inox đẹp và bền. Khách hàng của tôi rất hài lòng với các sản phẩm từ SAKURA JSC.',
+      content: 'SAKURA  cung cấp những sản phẩm cơ khí inox đẹp và bền. Khách hàng của tôi rất hài lòng với các sản phẩm từ SAKURA .',
       rating: 5
     }
   ];
@@ -90,7 +90,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Về SAKURA JSC</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Về SAKURA </h1>
           <p className="text-xl max-w-3xl mx-auto">
             Công ty Cổ Phần SAKURA - Thương hiệu hàng đầu trong lĩnh vực sản xuất cơ khí, 
             phụ kiện phổ thông đến cao cấp tại thành phố Hà Nội từ năm 2009.
@@ -105,7 +105,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Sứ mệnh của chúng tôi</h2>
               <p className="text-lg text-gray-600 mb-6">
-                SAKURA JSC cam kết cung cấp các sản phẩm cơ khí inox cao cấp theo thiết kế riêng với chất lượng cao, 
+                SAKURA  cam kết cung cấp các sản phẩm cơ khí inox cao cấp theo thiết kế riêng với chất lượng cao, 
                 đáp ứng nhu cầu riêng biệt của khách hàng trong việc tạo ra một không gian sống đẹp, sang trọng và cá nhân hóa.
               </p>
               <p className="text-lg text-gray-600">
@@ -126,7 +126,7 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Lịch sử phát triển</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Hành trình 15 năm phát triển của SAKURA JSC
+              Hành trình 15 năm phát triển của SAKURA 
             </p>
           </div>
           
@@ -159,7 +159,7 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Giá trị cốt lõi</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Những nguyên tắc và giá trị định hướng mọi hoạt động của SAKURA JSC
+              Những nguyên tắc và giá trị định hướng mọi hoạt động của SAKURA 
             </p>
           </div>
           
@@ -204,7 +204,7 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Cơ cấu tổ chức</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Đội ngũ chuyên nghiệp đang tạo nên sự khác biệt tại SAKURA JSC
+              Đội ngũ chuyên nghiệp đang tạo nên sự khác biệt tại SAKURA 
             </p>
           </div>
           
@@ -229,7 +229,7 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Khách hàng nói gì về chúng tôi</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Những đánh giá chân thực từ khách hàng đã tin tưởng và sử dụng sản phẩm của SAKURA JSC
+              Những đánh giá chân thực từ khách hàng đã tin tưởng và sử dụng sản phẩm của SAKURA 
             </p>
           </div>
           

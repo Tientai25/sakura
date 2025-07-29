@@ -32,22 +32,22 @@ export default function ContactPage() {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: 'Địa chỉ',
-      content: '123 Đường ABC, Quận 1, TP.HCM, Việt Nam'
+      content: 'Số 54 Đường 19/5, Văn Quán, Hà Đông, Hà Nội'
     },
     {
       icon: <Phone className="h-6 w-6" />,
-      title: 'Điện thoại',
-      content: '+84 123 456 789'
+      title: 'Hotline',
+      content: '0915221639'
     },
     {
       icon: <Mail className="h-6 w-6" />,
       title: 'Email',
-      content: 'info@sakurahome.vn'
+      content: 'Sakura@gmail.com'
     },
     {
       icon: <Clock className="h-6 w-6" />,
       title: 'Giờ làm việc',
-      content: 'Thứ 2 - Thứ 7: 8:00 - 18:00'
+      content: 'Thứ 2 - Thứ 7: 7h30 – 17h30 | Chủ nhật: Nghỉ (Hỗ trợ tư vấn qua hotline)'
     }
   ];
 
@@ -77,8 +77,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Liên hệ chúng tôi</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Chúng tôi luôn sẵn sàng hỗ trợ và giải đáp mọi thắc mắc của bạn. 
-            Hãy liên hệ với SAKURA JSC để được tư vấn tốt nhất.
+            Bạn đang cần tư vấn về thiết kế lan can và ban công hoặc cần báo giá nhanh chóng cho công trình của mình? Đừng ngần ngại liên hệ với chúng tôi ngay hôm nay!
           </p>
         </div>
       </section>
@@ -222,8 +221,17 @@ export default function ContactPage() {
             {/* Map Placeholder */}
             <div className="bg-white rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Vị trí của chúng tôi</h2>
-              <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                <span className="text-gray-500">Bản đồ sẽ được hiển thị ở đây</span>
+              <div className="rounded-lg h-64 overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.096484300000000!2d105.7744!3d20.9721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac76ccab6dd7%3A0x55e92a5b07a97d03!2zNTQgxJB1b3VuZyAxOS81LCBQaMaw4budIFbEg24gUXVhbiwgSMOgIMSQ4bqnaCwgSMOgIE5haSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1234567890"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Sakura Company Location"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -273,10 +281,10 @@ export default function ContactPage() {
               Gửi email cho chúng tôi để được tư vấn chi tiết và chuyên nghiệp
             </p>
             <a
-              href="mailto:info@sakurajsc.vn"
+              href="mailto:Sakura@gmail.com"
               className="text-yellow-600 font-semibold hover:text-yellow-700"
             >
-              info@sakurajsc.vn
+              Sakura@gmail.com
             </a>
           </div>
 
@@ -289,7 +297,10 @@ export default function ContactPage() {
               Chúng tôi sẵn sàng phục vụ bạn trong giờ làm việc
             </p>
             <p className="text-yellow-600 font-semibold">
-              Thứ 2 - Thứ 7: 8:00 - 18:00
+              Thứ 2 - Thứ 7: 7h30 – 17h30
+            </p>
+            <p className="text-gray-500 text-sm mt-1">
+              Chủ nhật: Nghỉ (Hỗ trợ tư vấn qua hotline)
             </p>
           </div>
         </div>

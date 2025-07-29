@@ -37,7 +37,7 @@ const products = stairNames.map((name, idx) => ({
   rating: 4.5 + (idx % 5) * 0.1,
   reviews: 50 + idx * 10,
   category: 'Cầu thang',
-  brand: 'SAKURA JSC',
+  brand: 'SAKURA ',
   onSale: true,
   inStock: true,
   variants: [
@@ -48,7 +48,7 @@ const products = stairNames.map((name, idx) => ({
     'Chất liệu': 'Gỗ, Sắt, Inox',
     'Kích thước': 'Theo yêu cầu',
     'Bảo hành': '2 năm',
-    'Thương hiệu': 'SAKURA JSC'
+    'Thương hiệu': 'SAKURA '
   }
 }));
 const relatedProducts = products.slice(0, 4).map((product, idx) => ({
