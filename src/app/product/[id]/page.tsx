@@ -29,7 +29,8 @@ const stairNames = [
 ];
 const products = stairNames.map((name, idx) => ({
   id: idx + 1,
-  name,
+  name: `Mã sản phẩm Sakura ${String(idx + 1).padStart(2, '0')}`,
+  code: `Sakura ${String(idx + 1).padStart(2, '0')}`,
   price: 0,
   originalPrice: 0,
   description: 'Sản phẩm cầu thang cao cấp, thiết kế hiện đại, chất liệu bền bỉ, phù hợp với nhiều không gian nội thất.',
@@ -54,6 +55,8 @@ const products = stairNames.map((name, idx) => ({
 const relatedProducts = products.slice(0, 4).map((product, idx) => ({
   ...product,
   image: stairImages[(idx + 1) % stairImages.length],
+  name: `Mã sản phẩm Sakura ${String(idx + 1).padStart(2, '0')}`,
+  code: `Sakura ${String(idx + 1).padStart(2, '0')}`,
 }));
 
 export default function ProductDetailPage() {
@@ -158,7 +161,8 @@ export default function ProductDetailPage() {
               </div>
 
               {/* Product Name */}
-              <h1 className="text-3xl font-bold text-gray-900 mb-4">{product.name}</h1>
+              <h1 className="text-3xl font-bold text-gray-900 mb-2">{product.name}</h1>
+              <p className="text-sm text-gray-500 mb-4">Mã sản phẩm: {product.code}</p>
 
               {/* Rating */}
               <div className="flex items-center mb-4">
