@@ -324,7 +324,7 @@ export default function ProductsPage() {
       case 'popular':
         return b.reviews - a.reviews;
       default:
-        return b.id - a.id; // newest first
+        return a.id - b.id; // smallest ID first
     }
   });
 
