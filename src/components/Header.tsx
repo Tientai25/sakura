@@ -36,7 +36,7 @@ const Header = () => {
               >
                 {item.name}
                 {item.name === 'Liên hệ' && (
-                  <span className="ml-2 text-yellow-600 font-semibold">0915221639</span>
+                  <span className="ml-2 text-yellow-600 font-semibold">0913281869</span>
                 )}
               </Link>
             ))}
@@ -89,7 +89,7 @@ const Header = () => {
                 >
                   {item.name}
                   {item.name === 'Liên hệ' && (
-                    <span className="ml-2 text-yellow-600 font-semibold">0915221639</span>
+                    <span className="ml-2 text-yellow-600 font-semibold">0913281869</span>
                   )}
                 </Link>
               ))}

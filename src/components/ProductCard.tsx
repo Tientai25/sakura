@@ -98,14 +98,14 @@ const ProductCard = ({ product }: ProductCardProps) => {
               <span className="text-sm font-medium text-white">Liên hệ hotline</span>
             </div>
             <div className="text-center mt-1">
-              <span className="text-lg font-bold text-yellow-600">0915221639</span>
+              <span className="text-lg font-bold text-yellow-600">0913281869</span>
             </div>
           </div>
         </div>
         
         {/* Contact Button */}
         {/* <a 
-          href="tel:0915221639"
+          href="tel:0913281869"
           className="w-full bg-gradient-to-r from-gray-800 to-gray-900 text-white py-2 px-4 rounded-lg hover:from-gray-700 hover:to-gray-800 transition-all flex items-center justify-center space-x-2"
         >
           <Phone className="h-4 w-4" />

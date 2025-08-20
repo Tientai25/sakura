@@ -37,7 +37,7 @@ export default function ContactPage() {
     {
       icon: <Phone className="h-6 w-6" />,
       title: 'Hotline',
-      content: '0915221639'
+      content: '0913281869'
     },
     {
       icon: <Mail className="h-6 w-6" />,
@@ -265,10 +265,10 @@ export default function ContactPage() {
               Liên hệ trực tiếp với chúng tôi qua điện thoại để được hỗ trợ nhanh chóng
             </p>
             <a
-              href="tel:0915221639"
+              href="tel:0913281869"
               className="text-yellow-600 font-semibold hover:text-yellow-700"
             >
-              0915221639
+              0913281869
             </a>
           </div>
 
