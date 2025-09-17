@@ -282,6 +282,7 @@ const products = [
     origin: 'Công Ty Sakura Việt Nam'
   }
 ];
+//13 sản phẩm
 
 const categories = ['Tất cả', 'Nội thất văn phòng', 'Nội thất phòng khách', 'Đèn chiếu sáng', 'Đồ trang trí', 'Nội thất đa năng', 'Đồ dùng học tập'];
 const brands = ['Tất cả', 'Sakura', 'Premium', 'Modern', 'Classic'];
