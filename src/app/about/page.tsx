@@ -154,23 +154,23 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-r from-gray-800 to-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Giá trị cốt lõi</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-white mb-4">Giá trị cốt lõi</h2>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               Những nguyên tắc và giá trị định hướng mọi hoạt động của SAKURA 
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow border border-gray-200">
-                <div className="text-yellow-600 mb-4 flex justify-center">
+              <div key={index} className="bg-white/5 rounded-lg p-6 text-center hover:shadow-lg transition-shadow border border-white/10">
+                <div className="text-yellow-400 mb-4 flex justify-center">
                   {value.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{value.title}</h3>
+                <p className="text-gray-300">{value.description}</p>
               </div>
             ))}
           </div>
@@ -178,7 +178,7 @@ export default function AboutPage() {
       </section>
 
       {/* Achievements */}
-      <section className="py-16 bg-gradient-to-r from-gray-800 to-gray-900 text-white">
+      {/* <section className="py-16 bg-gradient-to-r from-gray-800 to-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Thành tựu của chúng tôi</h2>
@@ -196,7 +196,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Team */}
       <section className="py-16 bg-gray-50">
