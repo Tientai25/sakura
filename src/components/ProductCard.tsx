@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Star, Phone, Heart } from 'lucide-react';
+import { Star, Heart } from 'lucide-react';
 
 interface Product {
   id: number;
@@ -90,18 +90,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
           </span>
         </div>
         
-        {/* Contact Info */}
-        <div className="mb-3">
-          <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-lg p-3 border border-gray-200">
-            <div className="flex items-center justify-center space-x-2">
-              <Phone className="h-4 w-4 text-yellow-600" />
-              <span className="text-sm font-medium text-white">Liên hệ hotline</span>
-            </div>
-            <div className="text-center mt-1">
-              <span className="text-lg font-bold text-yellow-600">0913281869</span>
-            </div>
-          </div>
-        </div>
         
         {/* Contact Button */}
         {/* <a 
