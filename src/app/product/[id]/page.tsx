@@ -9,9 +9,9 @@ import { useParams } from 'next/navigation';
 const stairImages = [
   // ['/assets/sp1.1.jpg', '/assets/sp1.2.jpg', '/assets/sp1.3.jpg'], // Sản phẩm 1
   ['/assets/sp1.1.jpg', '/assets/sp1.2.jpg', '/assets/sp1.2.jpg'], // Sản phẩm 1
-  ['/assets/sp2.1.jpg', '/assets/sp2.2.jpg', '/assets/sp2.3.jpg','/assets/sp2.4.jpg','/assets/sp2.5.jpg','/assets/sp2.6.jpg','/assets/sp2.7.jpg'], // Sản phẩm 2
+  ['/assets/sp2.1.jpg', '/assets/sp2.2.jpg', '/assets/sp2.3.jpg', '/assets/sp2.4.jpg', '/assets/sp2.5.jpg', '/assets/sp2.6.jpg', '/assets/sp2.7.jpg'], // Sản phẩm 2
   ['/assets/sp3.1.jpg', '/assets/sp3.2.jpg', '/assets/sp3.3.jpg'], // Sản phẩm 3
-  ['/assets/sp4.1.jpg', '/assets/sp4.2.jpg', '/assets/sp4.3.jpg','/assets/sp4.4.jpg','/assets/sp4.5.jpg'], // Sản phẩm 4
+  ['/assets/sp4.1.jpg', '/assets/sp4.2.jpg', '/assets/sp4.3.jpg', '/assets/sp4.4.jpg', '/assets/sp4.5.jpg'], // Sản phẩm 4
   // ['/assets/sp5.1.jpg', '/assets/sp5.2.jpg', '/assets/sp5.3.jpg'], // Sản phẩm 5
   // ['/assets/sp6.1.jpg', '/assets/sp6.2.jpg', '/assets/sp6.3.jpg'], // Sản phẩm 6
   // ['/assets/sp7.1.jpg', '/assets/sp7.2.jpg', '/assets/sp7.3.jpg'], // Sản phẩm 7
@@ -139,24 +139,6 @@ export default function ProductDetailPage() {
             </div>
             
             {/* Thumbnail Images */}
-            {/* <div className="grid grid-cols-4 gap-2">
-              {product.images.map((image, index) => (
-                <button
-                  key={index}
-                  onClick={() => setSelectedImage(index)}
-                  className={`aspect-square bg-white rounded-lg overflow-hidden border-2 ${
-                    selectedImage === index ? 'border-blue-500' : 'border-gray-200'
-                  }`}
-                >
-                  <Image
-                    src={image}
-                    alt={`${product.name} ${index + 1}`}
-                    fill
-                    className="object-cover"
-                  />
-                </button>
-              ))}
-            </div> */}
             {/* <div className="grid grid-cols-4 gap-2"> */}
             <div className="grid-cols-4 gap-2">
               {product.images.map((image, index) => (
@@ -349,7 +331,7 @@ export default function ProductDetailPage() {
                 <Link href={`/product/${product.id}`}>
                   <div className="relative aspect-square overflow-hidden">
                     <Image
-                      src={product.image}
+                      src={product.images[0]} // Sử dụng images[0] thay vì image
                       alt={product.name}
                       fill
                       className="object-cover hover:scale-105 transition-transform duration-300"
@@ -400,4 +382,4 @@ export default function ProductDetailPage() {
       </div>
     </div>
   );
-} 
+}
