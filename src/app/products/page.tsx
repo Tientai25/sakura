@@ -6,10 +6,10 @@ import ProductCard from '@/components/ProductCard';
 
 // Sample products data
 const stairImages = [
-  '/assets/stair-1.jpg',
-  '/assets/stair-2.jpg',
-  '/assets/stair-3.jpg',
-  '/assets/stair-4.jpg',
+  '/assets/sp1.1.jpg',
+  '/assets/sp2.1.jpg',
+  '/assets/sp3.1.jpg',
+  '/assets/sp4.1.jpg',
   '/assets/stair-5.jpg',
   '/assets/stair-6.jpg',
   '/assets/stair-7.jpg',

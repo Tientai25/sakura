@@ -7,12 +7,21 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
 const stairImages = [
-  '/assets/stair-1.jpg',
-  '/assets/stair-2.jpg',
-  '/assets/stair-3.jpg',
-  '/assets/stair-4.jpg',
-  '/assets/stair-5.jpg',
+  // ['/assets/sp1.1.jpg', '/assets/sp1.2.jpg', '/assets/sp1.3.jpg'], // Sản phẩm 1
+  ['/assets/sp1.1.jpg', '/assets/sp1.2.jpg', '/assets/sp1.2.jpg'], // Sản phẩm 1
+  ['/assets/sp2.1.jpg', '/assets/sp2.2.jpg', '/assets/sp2.3.jpg','/assets/sp2.4.jpg','/assets/sp2.5.jpg','/assets/sp2.6.jpg','/assets/sp2.7.jpg'], // Sản phẩm 2
+  ['/assets/sp3.1.jpg', '/assets/sp3.2.jpg', '/assets/sp3.3.jpg'], // Sản phẩm 3
+  ['/assets/sp4.1.jpg', '/assets/sp4.2.jpg', '/assets/sp4.3.jpg','/assets/sp4.4.jpg','/assets/sp4.5.jpg'], // Sản phẩm 4
+  // ['/assets/sp5.1.jpg', '/assets/sp5.2.jpg', '/assets/sp5.3.jpg'], // Sản phẩm 5
+  // ['/assets/sp6.1.jpg', '/assets/sp6.2.jpg', '/assets/sp6.3.jpg'], // Sản phẩm 6
+  // ['/assets/sp7.1.jpg', '/assets/sp7.2.jpg', '/assets/sp7.3.jpg'], // Sản phẩm 7
+  // ['/assets/sp8.1.jpg', '/assets/sp8.2.jpg', '/assets/sp8.3.jpg'], // Sản phẩm 8
+  // ['/assets/sp9.1.jpg', '/assets/sp9.2.jpg', '/assets/sp9.3.jpg'], // Sản phẩm 9
+  // ['/assets/sp10.1.jpg', '/assets/sp10.2.jpg', '/assets/sp10.3.jpg'], // Sản phẩm 10
+  // ['/assets/sp11.1.jpg', '/assets/sp11.2.jpg', '/assets/sp11.3.jpg'], // Sản phẩm 11
+  // ['/assets/sp12.1.jpg', '/assets/sp12.2.jpg', '/assets/sp12.3.jpg'], // Sản phẩm 12
 ];
+
 const stairNames = [
   'Cầu thang gỗ tay vịn sắt hiện đại',
   'Cầu thang gỗ tay vịn uốn cong',
@@ -34,7 +43,7 @@ const products = stairNames.map((name, idx) => ({
   price: 0,
   originalPrice: 0,
   description: 'Sản phẩm cầu thang cao cấp, thiết kế hiện đại, chất liệu bền bỉ, phù hợp với nhiều không gian nội thất.',
-  images: Array(4).fill(stairImages[idx % stairImages.length]),
+  images: stairImages[idx] || [stairImages[idx % stairImages.length][0]],
   rating: 4.5 + (idx % 5) * 0.1,
   reviews: 50 + idx * 10,
   category: 'Cầu thang',
@@ -54,7 +63,7 @@ const products = stairNames.map((name, idx) => ({
 }));
 const relatedProducts = products.slice(0, 4).map((product, idx) => ({
   ...product,
-  image: stairImages[(idx + 1) % stairImages.length],
+  images: stairImages[(idx + 1) % stairImages.length],
   name: `Mã sản phẩm Sakura ${String(idx + 1).padStart(2, '0')}`,
   code: `Sakura ${String(idx + 1).padStart(2, '0')}`,
 }));
@@ -130,12 +139,31 @@ export default function ProductDetailPage() {
             </div>
             
             {/* Thumbnail Images */}
-            <div className="grid grid-cols-4 gap-2">
+            {/* <div className="grid grid-cols-4 gap-2">
               {product.images.map((image, index) => (
                 <button
                   key={index}
                   onClick={() => setSelectedImage(index)}
                   className={`aspect-square bg-white rounded-lg overflow-hidden border-2 ${
+                    selectedImage === index ? 'border-blue-500' : 'border-gray-200'
+                  }`}
+                >
+                  <Image
+                    src={image}
+                    alt={`${product.name} ${index + 1}`}
+                    fill
+                    className="object-cover"
+                  />
+                </button>
+              ))}
+            </div> */}
+            {/* <div className="grid grid-cols-4 gap-2"> */}
+            <div className="grid-cols-4 gap-2">
+              {product.images.map((image, index) => (
+                <button
+                  key={index}
+                  onClick={() => setSelectedImage(index)}
+                  className={`relative h-24 w-24 bg-white rounded-lg overflow-hidden border-2 ${
                     selectedImage === index ? 'border-blue-500' : 'border-gray-200'
                   }`}
                 >
