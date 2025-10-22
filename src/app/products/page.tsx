@@ -297,7 +297,7 @@ const sortOptions = [
 
 export default function ProductsPage() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('Tất cả');
+  const [selectedCategory, setSelectedCategory] = useState('Cầu thang inox');
   const [selectedBrand, setSelectedBrand] = useState('Tất cả');
   const [sortBy, setSortBy] = useState('newest');
   const [currentPage, setCurrentPage] = useState(1);
@@ -306,14 +306,7 @@ export default function ProductsPage() {
   const productsPerPage = 8;
 
   // Filter products
-  // const filteredProducts = products.filter(product => {
-  //   const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
-  //   const matchesCategory = selectedCategory === 'Tất cả' || product.category === selectedCategory;
-  //   const matchesBrand = selectedBrand === 'Tất cả' || product.brand === selectedBrand;
-    
-  //   return matchesSearch && matchesCategory && matchesBrand;
-  // });
-   const filteredProducts = products.filter(product => {
+  const filteredProducts = products.filter(product => {
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === 'Cầu thang inox' || product.category === selectedCategory;
     const matchesBrand = selectedBrand === 'Tất cả' || product.brand === selectedBrand;
@@ -474,7 +467,7 @@ export default function ProductsPage() {
               {/* Clear Filters */}
               <button
                 onClick={() => {
-                  setSelectedCategory('Tất cả');
+                  setSelectedCategory('Cầu thang inox');
                   setSelectedBrand('Tất cả');
                   setSearchTerm('');
                 }}
