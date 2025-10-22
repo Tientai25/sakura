@@ -285,7 +285,7 @@ const products = [
 //13 sản phẩm
 
 // const categories = ['Tất cả', 'Nội thất văn phòng', 'Nội thất phòng khách', 'Đèn chiếu sáng', 'Đồ trang trí', 'Nội thất đa năng', 'Đồ dùng học tập'];
-const categories = ['Cầu thang inox123'];
+const categories = ['Cầu thang inox'];
 const brands = ['Tất cả', 'Sakura', 'Premium', 'Modern', 'Classic'];
 const sortOptions = [
   { value: 'newest', label: 'Mới nhất' },
@@ -306,9 +306,16 @@ export default function ProductsPage() {
   const productsPerPage = 8;
 
   // Filter products
-  const filteredProducts = products.filter(product => {
+  // const filteredProducts = products.filter(product => {
+  //   const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
+  //   const matchesCategory = selectedCategory === 'Tất cả' || product.category === selectedCategory;
+  //   const matchesBrand = selectedBrand === 'Tất cả' || product.brand === selectedBrand;
+    
+  //   return matchesSearch && matchesCategory && matchesBrand;
+  // });
+   const filteredProducts = products.filter(product => {
     const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = selectedCategory === 'Tất cả' || product.category === selectedCategory;
+    const matchesCategory = selectedCategory === 'Cầu thang inox' || product.category === selectedCategory;
     const matchesBrand = selectedBrand === 'Tất cả' || product.brand === selectedBrand;
     
     return matchesSearch && matchesCategory && matchesBrand;
