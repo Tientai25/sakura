@@ -437,7 +437,7 @@ export default function ProductsPage() {
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Bộ lọc</h3>
               
               {/* Categories */}
-              <div className="mb-6">
+              {/* <div className="mb-6">
                 <h4 className="font-medium text-gray-900 mb-3">Danh mục</h4>
                 <select
                   value={selectedCategory}
@@ -448,6 +448,12 @@ export default function ProductsPage() {
                     <option key={category} value={category}>{category}</option>
                   ))}
                 </select>
+              </div> */}
+              <div className="mb-6">
+                <h4 className="font-medium text-gray-900 mb-3">Danh mục</h4>
+                <div className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                  Cầu thang inox
+                </div>
               </div>
 
               {/* Brands */}
