@@ -285,7 +285,7 @@ const products = [
 //13 sản phẩm
 
 // const categories = ['Tất cả', 'Nội thất văn phòng', 'Nội thất phòng khách', 'Đèn chiếu sáng', 'Đồ trang trí', 'Nội thất đa năng', 'Đồ dùng học tập'];
-const categories = ['Cầu thang inox'];
+const categories = ['Cầu thang inox123'];
 const brands = ['Tất cả', 'Sakura', 'Premium', 'Modern', 'Classic'];
 const sortOptions = [
   { value: 'newest', label: 'Mới nhất' },
