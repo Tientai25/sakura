@@ -42,11 +42,11 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </Link>
         
         {/* Sale Badge */}
-        {product.onSale && product.originalPrice && (
+        {/* {product.onSale && product.originalPrice && (
           <div className="absolute top-2 left-2 bg-yellow-600 text-white text-xs font-bold px-2 py-1 rounded">
             -{discountPercentage}%
           </div>
-        )}
+        )} */}
         
         {/* Wishlist Button */}
         <button

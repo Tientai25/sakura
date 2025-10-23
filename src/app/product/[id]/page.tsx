@@ -123,11 +123,11 @@ export default function ProductDetailPage() {
                 fill
                 className="object-cover"
               />
-              {product.onSale && (
+              {/* {product.onSale && (
                 <div className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
                   -{discountPercentage}%
                 </div>
-              )}
+              )} */}
               <button
                 onClick={() => setIsWishlisted(!isWishlisted)}
                 className="absolute top-4 right-4 p-2 bg-white rounded-full shadow-md hover:bg-gray-100 transition-colors"
