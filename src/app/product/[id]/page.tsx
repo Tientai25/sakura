@@ -7,19 +7,19 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
 const stairImages = [
-  // ['/assets/sp1.1.jpg', '/assets/sp1.2.jpg', '/assets/sp1.3.jpg'], // Sản phẩm 1
-  ['/assets/sp1.1.jpg', '/assets/sp1.2.jpg', '/assets/sp1.2.jpg'], // Sản phẩm 1
-  ['/assets/sp2.1.jpg', '/assets/sp2.2.jpg', '/assets/sp2.3.jpg', '/assets/sp2.4.jpg', '/assets/sp2.5.jpg', '/assets/sp2.6.jpg', '/assets/sp2.7.jpg'], // Sản phẩm 2
-  ['/assets/sp3.1.jpg', '/assets/sp3.2.jpg', '/assets/sp3.3.jpg'], // Sản phẩm 3
-  ['/assets/sp4.1.jpg', '/assets/sp4.2.jpg', '/assets/sp4.3.jpg', '/assets/sp4.4.jpg', '/assets/sp4.5.jpg'], // Sản phẩm 4
-  // ['/assets/sp5.1.jpg', '/assets/sp5.2.jpg', '/assets/sp5.3.jpg'], // Sản phẩm 5
-  // ['/assets/sp6.1.jpg', '/assets/sp6.2.jpg', '/assets/sp6.3.jpg'], // Sản phẩm 6
-  // ['/assets/sp7.1.jpg', '/assets/sp7.2.jpg', '/assets/sp7.3.jpg'], // Sản phẩm 7
-  // ['/assets/sp8.1.jpg', '/assets/sp8.2.jpg', '/assets/sp8.3.jpg'], // Sản phẩm 8
-  // ['/assets/sp9.1.jpg', '/assets/sp9.2.jpg', '/assets/sp9.3.jpg'], // Sản phẩm 9
-  // ['/assets/sp10.1.jpg', '/assets/sp10.2.jpg', '/assets/sp10.3.jpg'], // Sản phẩm 10
-  // ['/assets/sp11.1.jpg', '/assets/sp11.2.jpg', '/assets/sp11.3.jpg'], // Sản phẩm 11
-  // ['/assets/sp12.1.jpg', '/assets/sp12.2.jpg', '/assets/sp12.3.jpg'], // Sản phẩm 12
+  ['/assets/stair-1.jpg', '/assets/sp1.1.jpg', '/assets/sp1.2.jpg', '/assets/sp1.3.jpg', '/assets/sp1.4.jpg'], // Sản phẩm 1
+  ['/assets/stair-2.jpg', '/assets/sp2.1.jpg', '/assets/sp2.2.jpg'], // Sản phẩm 2
+  ['/assets/stair-3.jpg', '/assets/sp3.1.jpg', '/assets/sp3.2.jpg', '/assets/sp3.3.jpg', '/assets/sp3.4.jpg', '/assets/sp3.5.jpg'], // Sản phẩm 3
+  ['/assets/stair-4.jpg', '/assets/sp4.1.jpg', '/assets/sp4.2.jpg', '/assets/sp4.3.jpg', '/assets/sp4.4.jpg'], // Sản phẩm 4
+  ['/assets/stair-5.jpg', '/assets/sp5.1.jpg', '/assets/sp5.2.jpg', '/assets/sp5.3.jpg', '/assets/sp5.4.jpg'], // Sản phẩm 5
+  ['/assets/stair-6.jpg', '/assets/sp6.1.jpg', '/assets/sp6.2.jpg'], // Sản phẩm 6
+  ['/assets/stair-7.jpg', '/assets/sp7.1.jpg', '/assets/sp7.2.jpg', '/assets/sp7.3.jpg', '/assets/sp7.4.jpg', '/assets/sp7.5.jpg', '/assets/sp7.6.jpg'], // Sản phẩm 7
+  ['/assets/stair-8.jpg', '/assets/sp8.1.jpg', '/assets/sp8.2.jpg'], // Sản phẩm 8
+  ['/assets/stair-9.jpg', '/assets/sp9.1.jpg', '/assets/sp9.2.jpg', '/assets/sp9.3.jpg', '/assets/sp9.4.jpg'], // Sản phẩm 9
+  ['/assets/stair-10.jpg', '/assets/sp10.1.jpg', '/assets/sp10.2.jpg', '/assets/sp10.3.jpg'], // Sản phẩm 10
+  ['/assets/stair-11.jpg', '/assets/sp11.1.jpg', '/assets/sp11.2.jpg', '/assets/sp11.3.jpg'], // Sản phẩm 11
+  ['/assets/stair-12.jpg', '/assets/sp12.1.jpg', '/assets/sp12.2.jpg'], // Sản phẩm 12
+  ['/assets/stair-13.jpg', '/assets/sp12.1.jpg', '/assets/sp12.2.jpg'], // Sản phẩm 13
 ];
 
 const stairNames = [
@@ -116,7 +116,8 @@ export default function ProductDetailPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Product Images */}
           <div>
-            <div className="relative aspect-square bg-white rounded-lg overflow-hidden mb-4">
+            {/* <div className="relative aspect-square bg-white rounded-lg overflow-hidden mb-4"> */}
+            <div className="relative aspect-[2/4] bg-white rounded-lg overflow-hidden mb-4">
               <Image
                 src={product.images[selectedImage]}
                 alt={product.name}
@@ -145,7 +146,7 @@ export default function ProductDetailPage() {
                 <button
                   key={index}
                   onClick={() => setSelectedImage(index)}
-                  className={`relative h-24 w-24 bg-white rounded-lg overflow-hidden border-2 ${
+                  className={`relative h-32 w-32 bg-white rounded-lg overflow-hidden border-2 ${
                     selectedImage === index ? 'border-blue-500' : 'border-gray-200'
                   }`}
                 >
@@ -336,11 +337,11 @@ export default function ProductDetailPage() {
                       fill
                       className="object-cover hover:scale-105 transition-transform duration-300"
                     />
-                    {product.onSale && (
+                    {/* {product.onSale && (
                       <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
                         Sale
                       </div>
-                    )}
+                    )} */}
                   </div>
                 </Link>
                 <div className="p-4">
