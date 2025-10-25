@@ -49,14 +49,14 @@ const ProductCard = ({ product }: ProductCardProps) => {
         )} */}
         
         {/* Wishlist Button */}
-        <button
+        {/* <button
           onClick={() => setIsWishlisted(!isWishlisted)}
           className="absolute top-2 right-2 p-2 bg-white rounded-full shadow-md hover:bg-gray-100 transition-colors"
         >
           <Heart 
             className={`h-4 w-4 ${isWishlisted ? 'fill-red-500 text-red-500' : 'text-gray-600'}`} 
           />
-        </button>
+        </button> */}
       </div>
 
       {/* Product Info */}

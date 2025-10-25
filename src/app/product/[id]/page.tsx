@@ -20,10 +20,11 @@ const stairImages = [
   ['/assets/stair-11.jpg', '/assets/sp11.1.jpg', '/assets/sp11.2.jpg', '/assets/sp11.3.jpg'], // Sản phẩm 11
   ['/assets/stair-12.jpg', '/assets/sp12.1.jpg', '/assets/sp12.2.jpg'], // Sản phẩm 12
   ['/assets/stair-13.jpg'], // Sản phẩm 13
-  ['/assets/stair-14.1.jpg', '/assets/sp14.1.jpg', '/assets/sp14.2.jpg'], // SP14
+  ['/assets/stair-14.jpg', '/assets/sp14.1.jpg', '/assets/sp14.2.jpg', '/assets/sp14.3.jpg', '/assets/sp14.4.jpg'], // SP14
   ['/assets/stair-15.jpg', '/assets/sp15.1.jpg', '/assets/sp15.2.jpg', '/assets/sp15.3.jpg', '/assets/sp15.4.jpg'], // SP15
   ['/assets/stair-16.jpg', '/assets/sp16.1.jpg', '/assets/sp16.2.jpg', '/assets/sp16.3.jpg', '/assets/sp16.4.jpg'], // SP16
-  ['/assets/stair-17.jpg']
+  ['/assets/stair-17.jpg','/assets/sp17.1.jpg' ,'/assets/sp17.2.jpg' ,'/assets/sp17.3.jpg', '/assets/sp17.4.jpg'],
+  ['/assets/stair-18.jpg', '/assets/sp18.1.jpg', '/assets/sp18.2.jpg', '/assets/sp18.3.jpg'] // SP18
 ];
 
 const stairNames = [
@@ -43,7 +44,8 @@ const stairNames = [
   'Cầu thang xoắn ốc inox 304 cao cấp',
   'Cầu thang gỗ óc chó tay vịn kính',
   'Cầu thang sắt sơn tĩnh điện hiện đại',
-  'Lan can kính không khung, trụ inox vuông'
+  'Lan can kính không khung, trụ inox vuông',
+  'Lan can sắt CNC cắt hoa văn cổ điển'
 ];
 const products = stairNames.map((name, idx) => ({
   id: idx + 1,
@@ -138,14 +140,14 @@ export default function ProductDetailPage() {
                   -{discountPercentage}%
                 </div>
               )} */}
-              <button
+              {/* <button
                 onClick={() => setIsWishlisted(!isWishlisted)}
                 className="absolute top-4 right-4 p-2 bg-white rounded-full shadow-md hover:bg-gray-100 transition-colors"
               >
                 <Heart 
                   className={`h-5 w-5 ${isWishlisted ? 'fill-red-500 text-red-500' : 'text-gray-600'}`} 
                 />
-              </button>
+              </button> */}
             </div>
             
             {/* Thumbnail Images */}

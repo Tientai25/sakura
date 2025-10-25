@@ -19,10 +19,11 @@ const stairImages = [
   '/assets/stair-11.jpg',
   '/assets/stair-12.jpg',
   '/assets/stair-13.jpg',
-  '/assets/stair-14.1.jpg',
+  '/assets/stair-14.jpg',
   '/assets/stair-15.jpg',
   '/assets/stair-16.jpg',
   '/assets/stair-17.jpg',
+  '/assets/stair-18.jpg',
 ];
 const products = [
   {
@@ -346,25 +347,45 @@ const products = [
     origin: 'Công Ty Sakura Việt Nam'
   },
   {
-  id: 17,
-  name: 'Mã sản phẩm Sakura 17',
-  price: 3100000,
-  originalPrice: 3800000,
-  image: stairImages[16], // index 16 → stair-17.jpg
-  rating: 4.8,
-  reviews: 95,
-  category: 'Cơ khí cầu thang',
-  brand: 'Sakura',
-  onSale: true,
-  code: 'Sakura 17',
-  material: 'Thép không gỉ 201, Kính cường lực 12mm',
-  thickness: '1.0mm - 2.0mm (thép), 12mm (kính)',
-  design: 'Lan can kính không khung, trụ inox vuông',
-  length: 'Theo yêu cầu',
-  surface: 'Inox xước hairline, kính trong suốt',
-  quality: 'Chịu lực tốt, an toàn cao, chống ố vàng',
-  origin: 'Công Ty Sakura Việt Nam'
-}
+    id: 17,
+    name: 'Mã sản phẩm Sakura 17',
+    price: 3100000,
+    originalPrice: 3800000,
+    image: stairImages[16], 
+    rating: 4.8,
+    reviews: 95,
+    category: 'Cơ khí cầu thang',
+    brand: 'Sakura',
+    onSale: true,
+    code: 'Sakura 17',
+    material: 'Thép không gỉ 201, Kính cường lực 12mm',
+    thickness: '1.0mm - 2.0mm (thép), 12mm (kính)',
+    design: 'Lan can kính không khung, trụ inox vuông',
+    length: 'Theo yêu cầu',
+    surface: 'Inox xước hairline, kính trong suốt',
+    quality: 'Chịu lực tốt, an toàn cao, chống ố vàng',
+    origin: 'Công Ty Sakura Việt Nam'
+  },
+  {
+    id: 18,
+    name: 'Mã sản phẩm Sakura 18',
+    price: 2650000,
+    originalPrice: 3300000,
+    image: stairImages[17], 
+    rating: 4.7,
+    reviews: 88,
+    category: 'Cơ khí cầu thang',
+    brand: 'Sakura',
+    onSale: true,
+    code: 'Sakura 18',
+    material: 'Thép hộp, Tấm sắt CNC',
+    thickness: '1.5mm - 3.0mm',
+    design: 'Lan can sắt CNC cắt hoa văn cổ điển',
+    length: '70cm-1m',
+    surface: 'Sơn tĩnh điện màu đen/trắng/vàng đồng',
+    quality: 'Độ chính xác cao, hoa văn sắc nét, bền màu',
+    origin: 'Công Ty Sakura Việt Nam'
+  }
 ];
 //13 sản phẩm
 
