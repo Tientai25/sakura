@@ -18,7 +18,11 @@ const stairImages = [
   '/assets/stair-10.jpg',
   '/assets/stair-11.jpg',
   '/assets/stair-12.jpg',
-  '/assets/stair-13.jpg'
+  '/assets/stair-13.jpg',
+  '/assets/stair-14.1.jpg',
+  '/assets/stair-15.jpg',
+  '/assets/stair-16.jpg',
+  '/assets/stair-17.jpg',
 ];
 const products = [
   {
@@ -280,7 +284,87 @@ const products = [
     surface: 'Mạ kẽm/nhôm hoặc phủ sơn tĩnh điện',
     quality: 'Đạt tiêu chuẩn kiểm định chất lượng',
     origin: 'Công Ty Sakura Việt Nam'
-  }
+  },
+  {
+    id: 14,
+    name: 'Mã sản phẩm Sakura 14',
+    price: 4200000,
+    originalPrice: 4800000,
+    image: stairImages[13],
+    rating: 4.8,
+    reviews: 98,
+    category: 'Cơ khí cầu thang',
+    brand: 'Sakura',
+    onSale: true,
+    code: 'Sakura 14',
+    material: 'Inox 304, Kính cường lực',
+    thickness: '1.2mm - 2.0mm',
+    design: 'Cầu thang xoắn ốc hiện đại, trụ inox tròn',
+    length: 'Theo thiết kế',
+    surface: 'Đánh bóng gương hoặc xước hairline',
+    quality: 'Chịu lực cao, chống ăn mòn',
+    origin: 'Công Ty Sakura Việt Nam'
+  },
+  {
+    id: 15,
+    name: 'Mã sản phẩm Sakura 15',
+    price: 3800000,
+    originalPrice: 4500000,
+    image: stairImages[14],
+    rating: 4.9,
+    reviews: 112,
+    category: 'Cơ khí cầu thang',
+    brand: 'Sakura',
+    onSale: true,
+    code: 'Sakura 15',
+    material: 'Gỗ óc chó tự nhiên, Kính cường lực',
+    thickness: '15mm - 25mm (gỗ)',
+    design: 'Tay vịn gỗ óc chó, bậc kính trong suốt',
+    length: 'Theo yêu cầu',
+    surface: 'Sơn PU cao cấp, kính 10mm',
+    quality: 'Chống mối mọt, chống trầy xước',
+    origin: 'Công Ty Sakura Việt Nam'
+  },
+  {
+    id: 16,
+    name: 'Mã sản phẩm Sakura 16',
+    price: 2900000,
+    originalPrice: 3500000,
+    image: stairImages[15],
+    rating: 4.7,
+    reviews: 105,
+    category: 'Cơ khí cầu thang',
+    brand: 'Sakura',
+    onSale: true,
+    code: 'Sakura 16',
+    material: 'Sắt hộp, Sơn tĩnh điện',
+    thickness: '1.5mm - 3.0mm',
+    design: 'Lan can sắt hộp sơn đen mờ hiện đại',
+    length: '70cm-1m',
+    surface: 'Sơn tĩnh điện chống rỉ, chống phai màu',
+    quality: 'Độ bền cao, dễ vệ sinh',
+    origin: 'Công Ty Sakura Việt Nam'
+  },
+  {
+  id: 17,
+  name: 'Mã sản phẩm Sakura 17',
+  price: 3100000,
+  originalPrice: 3800000,
+  image: stairImages[16], // index 16 → stair-17.jpg
+  rating: 4.8,
+  reviews: 95,
+  category: 'Cơ khí cầu thang',
+  brand: 'Sakura',
+  onSale: true,
+  code: 'Sakura 17',
+  material: 'Thép không gỉ 201, Kính cường lực 12mm',
+  thickness: '1.0mm - 2.0mm (thép), 12mm (kính)',
+  design: 'Lan can kính không khung, trụ inox vuông',
+  length: 'Theo yêu cầu',
+  surface: 'Inox xước hairline, kính trong suốt',
+  quality: 'Chịu lực tốt, an toàn cao, chống ố vàng',
+  origin: 'Công Ty Sakura Việt Nam'
+}
 ];
 //13 sản phẩm
 

@@ -12,14 +12,18 @@ const stairImages = [
   ['/assets/stair-3.jpg', '/assets/sp3.1.jpg', '/assets/sp3.2.jpg', '/assets/sp3.3.jpg', '/assets/sp3.4.jpg', '/assets/sp3.5.jpg'], // Sản phẩm 3
   ['/assets/stair-4.jpg', '/assets/sp4.1.jpg', '/assets/sp4.2.jpg', '/assets/sp4.3.jpg', '/assets/sp4.4.jpg'], // Sản phẩm 4
   ['/assets/stair-5.jpg', '/assets/sp5.1.jpg', '/assets/sp5.2.jpg', '/assets/sp5.3.jpg', '/assets/sp5.4.jpg'], // Sản phẩm 5
-  ['/assets/stair-6.jpg', '/assets/sp6.1.jpg', '/assets/sp6.2.jpg'], // Sản phẩm 6
+  ['/assets/stair-6.jpg', '/assets/stair-6.1.jpg', '/assets/sp6.1.jpg', '/assets/sp6.2.jpg', '/assets/sp6.3.jpg', '/assets/sp6.4.jpg', '/assets/sp6.5.jpg', '/assets/sp6.6.jpg', '/assets/sp6.7.jpg'], // Sản phẩm 6
   ['/assets/stair-7.jpg', '/assets/sp7.1.jpg', '/assets/sp7.2.jpg', '/assets/sp7.3.jpg', '/assets/sp7.4.jpg', '/assets/sp7.5.jpg', '/assets/sp7.6.jpg'], // Sản phẩm 7
   ['/assets/stair-8.jpg', '/assets/sp8.1.jpg', '/assets/sp8.2.jpg'], // Sản phẩm 8
   ['/assets/stair-9.jpg', '/assets/sp9.1.jpg', '/assets/sp9.2.jpg', '/assets/sp9.3.jpg', '/assets/sp9.4.jpg'], // Sản phẩm 9
-  ['/assets/stair-10.jpg', '/assets/sp10.1.jpg', '/assets/sp10.2.jpg', '/assets/sp10.3.jpg'], // Sản phẩm 10
+  ['/assets/stair-10.jpg', '/assets/sp10.1.jpg'], // Sản phẩm 10
   ['/assets/stair-11.jpg', '/assets/sp11.1.jpg', '/assets/sp11.2.jpg', '/assets/sp11.3.jpg'], // Sản phẩm 11
   ['/assets/stair-12.jpg', '/assets/sp12.1.jpg', '/assets/sp12.2.jpg'], // Sản phẩm 12
-  ['/assets/stair-13.jpg', '/assets/sp12.1.jpg', '/assets/sp12.2.jpg'], // Sản phẩm 13
+  ['/assets/stair-13.jpg'], // Sản phẩm 13
+  ['/assets/stair-14.1.jpg', '/assets/sp14.1.jpg', '/assets/sp14.2.jpg'], // SP14
+  ['/assets/stair-15.jpg', '/assets/sp15.1.jpg', '/assets/sp15.2.jpg', '/assets/sp15.3.jpg', '/assets/sp15.4.jpg'], // SP15
+  ['/assets/stair-16.jpg', '/assets/sp16.1.jpg', '/assets/sp16.2.jpg', '/assets/sp16.3.jpg', '/assets/sp16.4.jpg'], // SP16
+  ['/assets/stair-17.jpg']
 ];
 
 const stairNames = [
@@ -35,6 +39,11 @@ const stairNames = [
   'Cầu thang inox phối đồng cao cấp',
   'Cầu thang gỗ tự nhiên sang trọng',
   'Cầu thang sắt mỹ thuật cao cấp',
+  'Cầu thang kính cường lực hiện đại',
+  'Cầu thang xoắn ốc inox 304 cao cấp',
+  'Cầu thang gỗ óc chó tay vịn kính',
+  'Cầu thang sắt sơn tĩnh điện hiện đại',
+  'Lan can kính không khung, trụ inox vuông'
 ];
 const products = stairNames.map((name, idx) => ({
   id: idx + 1,
