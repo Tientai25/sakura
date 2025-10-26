@@ -10,9 +10,9 @@ const stairImages = [
   ['/assets/stair-1.jpg', '/assets/sp1.1.jpg', '/assets/sp1.2.jpg', '/assets/sp1.3.jpg', '/assets/sp1.4.jpg'], // Sản phẩm 1
   ['/assets/stair-2.jpg', '/assets/sp2.1.jpg', '/assets/sp2.2.jpg'], // Sản phẩm 2
   ['/assets/stair-3.jpg', '/assets/sp3.1.jpg', '/assets/sp3.2.jpg', '/assets/sp3.3.jpg', '/assets/sp3.4.jpg', '/assets/sp3.5.jpg'], // Sản phẩm 3
-  ['/assets/stair-4.jpg', '/assets/sp4.1.jpg', '/assets/sp4.2.jpg', '/assets/sp4.3.jpg', '/assets/sp4.4.jpg'], // Sản phẩm 4
-  ['/assets/stair-5.jpg', '/assets/sp5.1.jpg', '/assets/sp5.2.jpg', '/assets/sp5.3.jpg', '/assets/sp5.4.jpg'], // Sản phẩm 5
-  ['/assets/stair-6.jpg', '/assets/stair-6.1.jpg', '/assets/sp6.1.jpg', '/assets/sp6.2.jpg', '/assets/sp6.3.jpg', '/assets/sp6.4.jpg', '/assets/sp6.5.jpg', '/assets/sp6.6.jpg', '/assets/sp6.7.jpg'], // Sản phẩm 6
+  ['/assets/stair-4.jpg', '/assets/sp4.1.jpg', '/assets/sp4.2.jpg', '/assets/sp4.4.jpg'], // Sản phẩm 4
+  ['/assets/stair-5.jpg', '/assets/sp5.1.jpg', '/assets/sp5.4.jpg', '/assets/sp5.5.jpg'], // Sản phẩm 5
+  ['/assets/stair-6.jpg', '/assets/stair-6.1.jpg', '/assets/sp6.1.jpg', '/assets/sp6.2.jpg', '/assets/sp6.3.jpg'], // Sản phẩm 6
   ['/assets/stair-7.jpg', '/assets/sp7.1.jpg', '/assets/sp7.2.jpg', '/assets/sp7.3.jpg', '/assets/sp7.4.jpg', '/assets/sp7.5.jpg', '/assets/sp7.6.jpg'], // Sản phẩm 7
   ['/assets/stair-8.jpg', '/assets/sp8.1.jpg', '/assets/sp8.2.jpg'], // Sản phẩm 8
   ['/assets/stair-9.jpg', '/assets/sp9.1.jpg', '/assets/sp9.2.jpg', '/assets/sp9.3.jpg', '/assets/sp9.4.jpg'], // Sản phẩm 9
