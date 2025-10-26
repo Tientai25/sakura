@@ -22,8 +22,8 @@ const stairImages = [
   ['/assets/stair-13.jpg'], // Sản phẩm 13
   ['/assets/stair-14.jpg', '/assets/sp14.1.jpg', '/assets/sp14.2.jpg', '/assets/sp14.3.jpg', '/assets/sp14.4.jpg'], // SP14
   ['/assets/stair-15.jpg', '/assets/sp15.1.jpg', '/assets/sp15.2.jpg', '/assets/sp15.3.jpg', '/assets/sp15.4.jpg'], // SP15
-  ['/assets/stair-16.jpg', '/assets/sp16.1.jpg', '/assets/sp16.2.jpg', '/assets/sp16.3.jpg', '/assets/sp16.4.jpg'], // SP16
-  ['/assets/stair-17.jpg','/assets/sp17.1.jpg' ,'/assets/sp17.2.jpg' ,'/assets/sp17.3.jpg', '/assets/sp17.4.jpg'],
+  ['/assets/stair-16.jpg', '/assets/sp16.5.jpg', '/assets/sp16.6.jpg'], // SP16
+  ['/assets/stair-17.jpg','/assets/sp17.1.jpg' ,'/assets/sp17.2.jpg' ,'/assets/sp17.3.jpg', '/assets/sp17.4.jpg', '/assets/sp17.5.jpg', '/assets/sp17.6.jpg'],
   ['/assets/stair-18.jpg', '/assets/sp18.1.jpg', '/assets/sp18.2.jpg', '/assets/sp18.3.jpg'] // SP18
 ];
 
